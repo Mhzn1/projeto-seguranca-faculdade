@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: rgb(10, 10, 18);
+  color: rgb(220, 220, 235);
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(18, 18, 28, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(45, 45, 65, 0.5);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(55, 55, 75);
+  border-radius: 3px;
+}
